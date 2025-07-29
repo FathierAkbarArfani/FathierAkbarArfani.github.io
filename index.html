@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home</title>
+
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
+    }
+    
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 1000000;
+      opacity: 80%;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+    }
+
+    li {
+      float: left;
+    }
+
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    li a:hover {
+      background-color: #111;
+    }
+
+    li img {
+      display: block;
+      margin: 5px;
+      border-radius: 50%;
+    }
+
+    .hero-image {
+      position: relative;
+      height: 50vh;
+      background: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ), url(https://cdn.wallpapersafari.com/20/64/9GhNWj.jpg);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    .hero-text {
+      text-align: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+    }
+
+    .hero-text button {
+      background-color: rgb(127, 221, 255);
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .box-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 40px;
+    }
+
+    .kotak {
+      flex: 1 1 20%;
+      max-width: 20%;
+      min-width: 200px;
+      height: 150px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-sizing: border-box;
+    }
+
+    .Teksz {
+      text-align: center;
+    }
+
+    .footer {
+      padding: 20px;
+      border-top: #686565 1px solid;
+    }
+
+    .footer img {    
+      height: 50px;
+      width: auto;
+    }
+
+    .footer p {
+      font-family: 'Times New Roman', Times, serif;
+      color: #686565;
+      font-size: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+ 
+
+  <!-- Hero Section -->
+  <div class="hero-image">
+     <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Pelajaran</a></li>
+      <li><a href="#">Daftar</a></li>
+      <li><a href="#">Login</a></li>
+      <li style="float: right;">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTS8YdsMsKqjpELQo7mB5_7--x3uONtoMj-Sg&s.jpg" width="50" height="48" alt="User Icon"/>
+      </li>
+    </ul>
+  </nav>
+    <div class="hero-text">
+      <h1>Moral Minus</h1>
+      <p>Elden Ring Wylder Expert</p>
+      <button>Learn</button>
+    </div>
+  </div>
+
+  <!-- 4-Column Boxes -->
+  <div class="box-container">
+    <div class="kotak" style=" border: 15px solid rgb(1, 168, 137);
+      background-color: aquamarine;"><div class="Teksz">Html & CSS</div></div>
+    <div class="kotak" style=" border: 15px solid rgb(92, 46, 245);
+      background-color: #7f7fff;"><div class="Teksz">JQuery</div></div>
+    <div class="kotak" style=" border: 15px solid rgb(196, 36, 36);
+      background-color: rgb(255, 94, 94);"><div class="Teksz">Ruby</div></div>
+    <div class="kotak" style=" border: 15px solid rgb(204, 219, 44);
+      background-color: rgba(255, 245, 134, 0.993);"><div class="Teksz">PHP</div></div>
+  </div>
+
+  <div class="footer">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTS8YdsMsKqjpELQo7mB5_7--x3uONtoMj-Sg&s.jpg" width="50" height="48" alt="User Icon"/>
+    <p>Fathier Akbar Arfani - Copyright 2025</p>
+  </div>
+
+</body>
+</html>
